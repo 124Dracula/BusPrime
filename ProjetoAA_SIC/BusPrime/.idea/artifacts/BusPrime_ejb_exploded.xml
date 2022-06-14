@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ejb" name="BusPrime:ejb exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/BusPrime_ejb_exploded</output-path>
+    <root id="root">
+      <element id="module-output" name="BusPrime" />
+      <element id="javaee-facet-resources" facet="BusPrime/ejb/EJB" />
+    </root>
+  </artifact>
+</component>

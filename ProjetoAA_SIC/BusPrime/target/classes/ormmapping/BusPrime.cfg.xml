@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Licensee: ruial(Universidade do Minho)
+License Type: Academic
+-->
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+ "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+   	<!-- properties -->
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/BusPrime</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">fofinha</property>
+		<property name="show_sql">false</property>
+		<property name="query.substitutions">true 1, false 0, yes 'Y', no 'N'</property>
+		<!-- mapping files -->
+		<mapping resource="ormmapping/Autocarro.hbm.xml" />
+		<mapping resource="ormmapping/Bilhete.hbm.xml" />
+		<mapping resource="ormmapping/Coordenadas.hbm.xml" />
+		<mapping resource="ormmapping/Empresa.hbm.xml" />
+		<mapping resource="ormmapping/Paragem.hbm.xml" />
+		<mapping resource="ormmapping/ParagemHora.hbm.xml" />
+		<mapping resource="ormmapping/Percurso.hbm.xml" />
+		<mapping resource="ormmapping/PerguntaFrequente.hbm.xml" />
+		<mapping resource="ormmapping/Utilizador.hbm.xml" />
+		<mapping resource="ormmapping/Viagem.hbm.xml" />
+	</session-factory>
+</hibernate-configuration>

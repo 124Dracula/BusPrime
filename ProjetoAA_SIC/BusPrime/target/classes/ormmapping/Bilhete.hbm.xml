@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Licensee: ruial(Universidade do Minho)
+License Type: Academic
+-->
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="backend.BD.Bilhete" table="Bilhete" lazy="false">
+		<id name="ID" column="ID" type="integer" unsaved-value="0">
+			<generator class="native">
+			</generator>
+		</id>
+		<many-to-one name="_viagem" column="ViagemID" class="backend.BD.Viagem" cascade="save-update,lock" unique="true" not-null="true" lazy="proxy" access="field">
+		</many-to-one>
+		<many-to-one name="empresa" column="EmpresaID" class="backend.BD.Empresa" cascade="save-update,lock" unique="true" not-null="true" lazy="proxy" access="field">
+		</many-to-one>
+		<property name="preco" column="Preco" type="double" not-null="true" lazy="false"/>
+		<property name="partida" column="Partida" type="string" length="255" not-null="false" lazy="false"/>
+		<property name="chegada" column="Chegada" type="string" length="255" not-null="false" lazy="false"/>
+	</class>
+</hibernate-mapping>
