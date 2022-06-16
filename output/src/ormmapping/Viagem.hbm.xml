@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Licensee: bruno(Universidade do Minho)
+License Type: Academic
+-->
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="Viagem" table="Viagem" lazy="false">
+		<id name="ID" column="ID" type="integer" unsaved-value="0">
+			<generator class="native">
+			</generator>
+		</id>
+		<property name="nbilhetes" column="Nbilhetes" type="integer" length="10" not-null="true" lazy="false"/>
+		<property name="preco" column="Preco" type="double" not-null="true" lazy="false"/>
+		<property name="intercidades" column="Intercidades" type="boolean" length="1" not-null="true" lazy="false"/>
+		<set name="ORM__viagem" lazy="true" cascade="save-update,lock" inverse="false">
+			<key column="ViagemID" not-null="true"/>
+			<one-to-many class=".ParagemHora"/>
+		</set>
+	</class>
+</hibernate-mapping>

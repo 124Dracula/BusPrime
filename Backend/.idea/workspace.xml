@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2de8a6b-f89c-409e-842d-c7e20e0e07ca" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/components/NavbarHome.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/components/NavbarHome.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/views/Home.vue" afterDir="false" />
-    </list>
+    <list default="true" id="c2de8a6b-f89c-409e-842d-c7e20e0e07ca" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,24 +29,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Universidade/4ano/2Semestre/AA/BusPrime/Backend/src/main/resources/ormmapping/BusPrime.cfg.xml&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Facets&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.22873563&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;5076ae0c549f69e948f8ca762fb48ca0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/Universidade/4ano/2Semestre/AA/BusPrime/output/lib/orm.jar",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.22873563",
+    "settings.editor.selected.configurable": "preferences.general",
+    "spring.configuration.checksum": "5076ae0c549f69e948f8ca762fb48ca0"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Servidor" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="ACTIVE_PROFILES" />
@@ -85,7 +80,7 @@
       <updated>1655250051158</updated>
       <workItem from="1655250058264" duration="1141000" />
       <workItem from="1655251230437" duration="33103000" />
-      <workItem from="1655363190820" duration="21193000" />
+      <workItem from="1655363190820" duration="21837000" />
     </task>
     <servers />
   </component>
