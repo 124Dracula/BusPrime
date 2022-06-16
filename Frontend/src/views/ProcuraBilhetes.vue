@@ -164,6 +164,7 @@
 </template>
 
 <script>
+import {BACKEND_IP} from '../store/consts'
 
 import $ from 'jquery'
 import axios from 'axios'
@@ -205,7 +206,7 @@ export default {
 
         axios({
                 method : "get",
-                url: "http://localhost:8080/paragens"
+                url: BACKEND_IP + "/paragens"
         })
         .then(data => {
                     for (let i = 0; i < data.data.paragens.length; i++)
@@ -219,7 +220,7 @@ export default {
         if (!(localStorage.getItem('jwt') === 'null')) {
             axios({
                 method : "get",
-                url: "http://localhost:8080/utilizador/listparagens/" + this.idUser,
+                url: BACKEND_IP + "/utilizador/listparagens/" + this.idUser,
                 headers: { "Authorization" : this.token }
             })
             .then(data => {
@@ -252,7 +253,7 @@ export default {
 
         axios({
             method : "post",
-            url: "http://localhost:8080/viagem/filter",
+            url: BACKEND_IP + "/viagem/filter",
             data: objetoJson
             })
             .then(data => {
@@ -265,7 +266,7 @@ export default {
 
         axios({
                 method : "get",
-                url: "http://localhost:8080/utilizador/listpercursos/" + this.idUser,
+                url: BACKEND_IP + "/utilizador/listpercursos/" + this.idUser,
                 headers: { "Authorization" : this.token }
             })
             .then(data => {
@@ -385,7 +386,7 @@ export default {
 
             axios({
                 method : "post",
-                url: "http://localhost:8080/utilizador/comprarBilhete/" + this.idUser,
+                url: BACKEND_IP + "/utilizador/comprarBilhete/" + this.idUser,
                 headers: { "Authorization" : this.token },
                 data: objetoJson
             })
@@ -418,7 +419,7 @@ export default {
 
             axios({
                 method : "post",
-                url: "http://localhost:8080/utilizador/addpercurso/" + this.idUser,
+                url: BACKEND_IP + "/utilizador/addpercurso/" + this.idUser,
                 headers: { "Authorization" : this.token },
                 data: objetoJson
             })

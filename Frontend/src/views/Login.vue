@@ -18,6 +18,7 @@
 </template>
 
 <script>
+import {BACKEND_IP} from '../store/consts'
 
 import axios from 'axios'
 import NavbarDefault from '../components/NavbarDefault.vue'
@@ -50,7 +51,7 @@ export default {
             utilizador['username'] = this.username
             utilizador['password'] = this.password
             
-            axios.post("http://localhost:8080/utilizador/login", utilizador)
+            axios.post(BACKEND_IP + "/utilizador/login", utilizador)
             .then(data => {
                         this.alert = false
                         console.log(data)

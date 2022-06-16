@@ -5,37 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2de8a6b-f89c-409e-842d-c7e20e0e07ca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BusPrime.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/BusPrime_ejb_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/BusPrime_ejb_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Spring_5_2_3_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BusPrime.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Populacao.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Populacao.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/backend/beans/ParagemBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/beans/ParagemBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/backend/beans/PerguntasFreqBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/beans/PerguntasFreqBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/backend/beans/UtilizadorBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/beans/UtilizadorBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/backend/beans/ViagemBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/beans/ViagemBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/backend/controller/ControllerUtilizador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/controller/ControllerUtilizador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/backend/controller/ControllerViagem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/controller/ControllerViagem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/backend/message/ListaParagensFavMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/message/ListaParagensFavMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/backend/message/ListaPercursoFavMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/message/ListaPercursoFavMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/backend/message/ViagemPretendidaMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/message/ViagemPretendidaMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/backend/message/filterViagemMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/message/filterViagemMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/backend/beans/ParagemBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/beans/ParagemBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/backend/beans/PerguntasFreqBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/beans/PerguntasFreqBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/backend/beans/UtilizadorBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/beans/UtilizadorBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/backend/beans/ViagemBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/beans/ViagemBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/backend/controller/ControllerUtilizador.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/controller/ControllerUtilizador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/backend/controller/ControllerViagem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/controller/ControllerViagem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/backend/message/ListaParagensFavMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/message/ListaParagensFavMessage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/backend/message/ListaPercursoFavMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/message/ListaPercursoFavMessage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/backend/message/ViagemPretendidaMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/message/ViagemPretendidaMessage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/backend/message/filterViagemMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/message/filterViagemMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/src/components/NavbarHome.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/components/NavbarHome.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/src/views/Home.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +85,7 @@
       <updated>1655250051158</updated>
       <workItem from="1655250058264" duration="1141000" />
       <workItem from="1655251230437" duration="33103000" />
-      <workItem from="1655363190820" duration="18896000" />
+      <workItem from="1655363190820" duration="21193000" />
     </task>
     <servers />
   </component>

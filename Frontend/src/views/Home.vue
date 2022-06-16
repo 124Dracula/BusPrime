@@ -70,6 +70,7 @@
 
 
 <script>
+import {BACKEND_IP} from '../store/consts'
 
 import axios from 'axios'
 import NavbarHome from '../components/NavbarHome.vue'
@@ -100,9 +101,12 @@ export default {
     created() {
         window.scrollTo(0, 0);
 
+        console.log("ESTE È O IP")
+        console.log(BACKEND_IP)
+
         axios({
                 method : "get",
-                url: "http://localhost:8080/paragens"
+                url: BACKEND_IP + "/paragens"
         })
         .then(data => {
                     for (let i = 0; i < data.data.paragens.length; i++)
@@ -115,7 +119,7 @@ export default {
         if (!(localStorage.getItem('jwt') === 'null')) {
             axios({
                 method : "get",
-                url: "http://localhost:8080/utilizador/listparagens/" + this.idUser,
+                url: BACKEND_IP + "/utilizador/listparagens/" + this.idUser,
                 headers: { "Authorization" : this.token }
             })
             .then(data => {

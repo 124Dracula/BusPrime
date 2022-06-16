@@ -55,6 +55,7 @@
 </template>
 
 <script>
+import {BACKEND_IP} from '../store/consts'
 
 import axios from 'axios'
 import NavbarDefault from '../components/NavbarDefault.vue'
@@ -84,7 +85,7 @@ export default {
 
         axios({
                 method : "get",
-                url: "http://localhost:8080/paragens"
+                url: BACKEND_IP + "/paragens"
         })
         .then(data => {
                     for (let i = 0; i < data.data.paragens.length; i++)
@@ -98,7 +99,7 @@ export default {
 
         axios({
                 method : "get",
-                url: "http://localhost:8080/utilizador/listparagens/" + this.idUser,
+                url: BACKEND_IP + "/utilizador/listparagens/" + this.idUser,
                 headers: { "Authorization" : this.token }
         })
         .then(data => {
@@ -149,7 +150,7 @@ export default {
     
                 axios({
                     method : "post",
-                    url: "http://localhost:8080/utilizador/addparagem/" + this.idUser,
+                    url: BACKEND_IP + "/utilizador/addparagem/" + this.idUser,
                     headers: { "Authorization" : this.token },
                     data: dataParagem
                 })
@@ -176,7 +177,7 @@ export default {
 
             axios({
                 method : "post",
-                url: "http://localhost:8080/utilizador/removeparagem/" + this.idUser,
+                url: BACKEND_IP + "/utilizador/removeparagem/" + this.idUser,
                 headers: { "Authorization" : this.token },
                 data: dataParagem
             })

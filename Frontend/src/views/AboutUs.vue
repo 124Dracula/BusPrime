@@ -67,6 +67,7 @@
 </template>
 
 <script>
+import {BACKEND_IP} from '../store/consts'
 
 import NavbarDefault from '../components/NavbarDefault.vue'
 

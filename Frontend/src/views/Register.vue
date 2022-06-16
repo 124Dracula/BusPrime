@@ -17,6 +17,7 @@
 </template>
 
 <script>
+import {BACKEND_IP} from '../store/consts'
 
 import axios from 'axios'
 import NavbarDefault from '../components/NavbarDefault.vue'
@@ -58,7 +59,7 @@ export default {
             console.log(utilizador)
 
             if (this.password1 === this.password2) {
-                axios.post("http://localhost:8080/utilizador/registar", utilizador)
+                axios.post(BACKEND_IP + "/utilizador/registar", utilizador)
                 .then(data => {
                             this.alert = false
                             console.log(data)

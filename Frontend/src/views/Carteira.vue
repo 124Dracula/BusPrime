@@ -31,6 +31,7 @@
 </template>
 
 <script>
+import {BACKEND_IP} from '../store/consts'
 
 import axios from 'axios'
 import NavbarDefault from '../components/NavbarDefault.vue'
@@ -53,7 +54,7 @@ export default {
 
         axios({
                 method : "get",
-                url: "http://localhost:8080/utilizador/" + this.idUser
+                url: BACKEND_IP + "/utilizador/" + this.idUser
         })
         .then(data => {
                     this.dinheiro = data.data.saldo
@@ -84,7 +85,7 @@ export default {
 
             axios({
                 method : "post",
-                url: "http://localhost:8080/utilizador/depositar/" + this.idUser,
+                url: BACKEND_IP + "/utilizador/depositar/" + this.idUser,
                 headers: { "Authorization" : this.token },
                 data: utilizador
             })

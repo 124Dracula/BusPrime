@@ -45,6 +45,7 @@
 </template>
 
 <script>
+import {BACKEND_IP} from '../store/consts'
 
 import axios from 'axios'
 import NavbarDefault from '../components/NavbarDefault.vue'
@@ -69,7 +70,7 @@ export default {
 
         axios({
                 method : "get",
-                url: "http://localhost:8080/utilizador/listarbilhetes/" + this.idUser,
+                url: BACKEND_IP + "/utilizador/listarbilhetes/" + this.idUser,
                 headers: { "Authorization" : this.token }
             })
             .then(data => {

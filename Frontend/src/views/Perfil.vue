@@ -58,6 +58,7 @@
 
 
 <script>
+import {BACKEND_IP} from '../store/consts'
 
 import axios from 'axios'
 import { ref } from 'vue';
@@ -77,7 +78,7 @@ export default {
     created() {
         window.scrollTo(0, 0);
 
-        axios.post("http://localhost:8080/utilizador/token", this.token)
+        axios.post( BACKEND_IP + "/utilizador/token", this.token)
         .then(data => {
                         this.email = data.data.email
                         this.username = data.data.username

@@ -63,6 +63,7 @@
 </template>
 
 <script>
+import {BACKEND_IP} from '../store/consts'
 
 import axios from 'axios'
 import NavbarDefault from '../components/NavbarDefault.vue'
@@ -117,7 +118,7 @@ export default {
 
             axios({
                 method : "post",
-                url: "http://localhost:8080/utilizador/removepercurso/" + this.idUser,
+                url: BACKEND_IP + "/utilizador/removepercurso/" + this.idUser,
                 headers: { "Authorization" : this.token },
                 data: objetoJson
             })
@@ -158,7 +159,7 @@ export default {
 
         axios({
                 method : "get",
-                url: "http://localhost:8080/utilizador/listpercursos/" + this.idUser,
+                url: BACKEND_IP + "/utilizador/listpercursos/" + this.idUser,
                 headers: { "Authorization" : this.token }
             })
             .then(data => {

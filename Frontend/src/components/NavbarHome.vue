@@ -1,11 +1,12 @@
 <template>
 
     <!-- Navbar -->
-    <header id="navBarHome">
+    <header id="navBarHome" class="navBarHome">
         <div class="w3-top">
             <div class="w3-bar w3-mobile">
-                <router-link to="/" class="w3-bar-item w3-hover-none w3-right w3-mobile">
-                    <img src="../assets/img/logoBranco.png" alt="BusPrime" id="imageLogo">
+                <router-link to="/" class="w3-bar-item w3-hover-none w3-right w3-mobile imageLogo">
+                    <img v-if="logo === 'branco'" src="../assets/img/logoBranco.png" alt="BusPrime">
+                    <img v-else src="../assets/img/logoPreto.png" alt="BusPrime">
                 </router-link>
                 <span class = "nav-vertical-align-center w3-mobile">
                     <router-link to="/perfil" class="w3-bar-item w3-hover-none w3-right w3-mobile" v-if="logado">O meu Perfil</router-link>
@@ -23,16 +24,39 @@
 export default {
     name: 'App',
 
+    data() {
+        return {
+            logado : false,
+            logo: 'branco'
+        }
+    },
+
     created() {
         if (localStorage.getItem('jwt') != 'null')
             this.logado = true
+
+        window.addEventListener('scroll', this.afterScroll)
     },
 
-    data() {
-        return {
-            logado : false
+    methods: {
+        
+
+        afterScroll() {
+            let header = document.getElementsByClassName('w3-bar')[0];
+            let windowPosition = window.scrollY > 0;
+
+            console.log(document.getElementsByClassName("imageLogo").src);
+
+            header.classList.toggle('scrolling-active', windowPosition);
+            
+            if (window.scrollY == 0) {
+                this.logo = 'branco';
+            } else {
+                this.logo = 'preto';
+            }
         }
     }
+
 }
 
 </script>
