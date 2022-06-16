@@ -60,6 +60,7 @@ public class ControllerUtilizador {
 
     @PostMapping("/login")
     public String login(@RequestBody AuthenticationMessage am){
+        System.out.println("TOU AQUI LOGIN");
         String token = ub.login(am);
         if(token!=null){
             return token;
@@ -77,10 +78,10 @@ public class ControllerUtilizador {
         return ub.adicionarPercursoFavorito(id,apfv);
     }
     @PostMapping("/removepercurso/{id}")
-    public int removerPercursoFavorito(@RequestHeader(value="Authorization") String token,@PathVariable int id,@RequestBody RemoverPercursoMessage rpm){
+    public ListaPercursosFavMessage removerPercursoFavorito(@RequestHeader(value="Authorization") String token,@PathVariable int id,@RequestBody RemoverPercursoMessage rpm){
         Claims cl = JWTUtil.decodeJWT(token);
         if(cl==null || id!=(int)cl.get("id")) {
-            return 0;
+            return null;
         }
         return ub.removerPercursoFavorito(id,rpm);
     }
@@ -94,7 +95,7 @@ public class ControllerUtilizador {
         return ub.listaPercursosFavoritos(id);
     }
     @PostMapping("/addparagem/{id}")
-    public RespostaParagemFavMessage adicionarParagemFavorita(@RequestHeader(value="Authorization") String token,@PathVariable int id,@RequestBody AdicionarParagemFavMessage apfv){
+    public ListaParagensFavMessage adicionarParagemFavorita(@RequestHeader(value="Authorization") String token,@PathVariable int id,@RequestBody AdicionarParagemFavMessage apfv){
         Claims cl = JWTUtil.decodeJWT(token);
         if(cl==null || id!=(int)cl.get("id")) {
             return null;
@@ -102,10 +103,10 @@ public class ControllerUtilizador {
         return ub.adicionarParagemFavorita(id,apfv);
     }
     @PostMapping("/removeparagem/{id}")
-    public int removerParagemFavorita(@RequestHeader(value="Authorization") String token,@PathVariable int id,@RequestBody RemoverParagemMessage rpm){
+    public ListaParagensFavMessage removerParagemFavorita(@RequestHeader(value="Authorization") String token,@PathVariable int id,@RequestBody RemoverParagemMessage rpm){
         Claims cl = JWTUtil.decodeJWT(token);
         if(cl==null || id!=(int)cl.get("id")) {
-            return 0;
+            return null;
         }
         return ub.removerParagemFavorita(id,rpm);
     }
@@ -133,5 +134,9 @@ public class ControllerUtilizador {
             return null;
         }
         return ub.listabilhetes(id);
+    }
+    @PostMapping("/token")
+    public Claims decodeToken(@RequestBody String token){
+        return JWTUtil.decodeJWT(token);
     }
 }

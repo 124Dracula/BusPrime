@@ -16,4 +16,14 @@ public class ListaParagensFavMessage {
     public ListaParagensFavMessage(ArrayList<ListaParagemFavMessage> paragens) {
         this.paragens = paragens;
     }
+
+    public ListaParagensFavMessage remove (ListaParagemFavMessage p) {
+        paragens.remove(p);
+        return this;
+    }
+
+    public ListaParagensFavMessage add (ListaParagemFavMessage p) {
+        paragens.add(p);
+        return this;
+    }
 }

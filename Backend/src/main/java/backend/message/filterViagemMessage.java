@@ -5,12 +5,12 @@ public class filterViagemMessage {
     private String paragemInicial;
     private String paragemFinal;
     private String hora;
-    private int intercidades;
+    private String intercidades;
 
     private String filtro;
 
 
-    public filterViagemMessage(String paragemInicial, String paragemFinal, String hora, int intercidades, String filtro) {
+    public filterViagemMessage(String paragemInicial, String paragemFinal, String hora, String intercidades, String filtro) {
         this.paragemInicial = paragemInicial;
         this.paragemFinal = paragemFinal;
         this.hora = hora;
@@ -30,7 +30,7 @@ public class filterViagemMessage {
         this.hora = hora;
     }
 
-    public void setIntercidades(int intercidades) {
+    public void setIntercidades(String intercidades) {
         this.intercidades = intercidades;
     }
 
@@ -50,7 +50,7 @@ public class filterViagemMessage {
         return hora;
     }
 
-    public int getIntercidades() {
+    public String getIntercidades() {
         return intercidades;
     }
 

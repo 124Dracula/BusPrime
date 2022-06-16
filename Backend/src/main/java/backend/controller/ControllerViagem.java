@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
 import javax.ejb.EJB;
+import javax.validation.Valid;
 import java.text.ParseException;
 
 @CrossOrigin("*")
@@ -21,12 +22,12 @@ public class ControllerViagem {
     @EJB
     ViagemBean vb;
 
-    @GetMapping("/search")
+    @PostMapping("/search")
     public ViagensResultantesMessage getViagens(@RequestBody ViagemPretendidaMessage vpm) throws PersistentException, ParseException {
         return vb.getViagens(vpm);
     }
 
-    @GetMapping("/filter")
+    @PostMapping("/filter")
     public ViagensResultantesMessage filterViagens(@RequestBody filterViagemMessage fvm) throws PersistentException, ParseException {
         return vb.filterViagens(fvm);
     }

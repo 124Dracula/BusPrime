@@ -4,9 +4,9 @@ public class ViagemPretendidaMessage {
     private String paragemInicial;
     private String paragemFinal;
     private String hora;
-    private int intercidades;
+    private String intercidades;
 
-    public ViagemPretendidaMessage(String paragemInicial, String paragemFinal, String hora, int intercidades) {
+    public ViagemPretendidaMessage(String paragemInicial, String paragemFinal, String hora, String intercidades) {
         this.paragemInicial = paragemInicial;
         this.paragemFinal = paragemFinal;
         this.hora = hora;
@@ -25,7 +25,7 @@ public class ViagemPretendidaMessage {
         this.hora = hora;
     }
 
-    public void setIntercidades(int intercidades) {
+    public void setIntercidades(String intercidades) {
         this.intercidades = intercidades;
     }
 
@@ -41,7 +41,7 @@ public class ViagemPretendidaMessage {
         return hora;
     }
 
-    public int getIntercidades() {
+    public String getIntercidades() {
         return intercidades;
     }
 }

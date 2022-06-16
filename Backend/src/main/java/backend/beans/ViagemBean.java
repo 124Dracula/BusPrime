@@ -42,6 +42,7 @@ public class ViagemBean {
                         fim = ph;
                     }
                 }
+                ParagemHoraDAO.evict(ph);
             }
             if ((inicio != null) & (fim != null)) {
                 DateFormat formatter = new SimpleDateFormat("hh:mm");
@@ -57,6 +58,7 @@ public class ViagemBean {
                             autofi = a;
                             break;
                         }
+                        AutocarroDAO.evict(a);
                     }
                     ArrayList<Empresa> empresas = (ArrayList<Empresa>) EmpresaDAO.queryEmpresa(null, null);
                     Empresa empfi = empresas.get(0);
@@ -65,12 +67,19 @@ public class ViagemBean {
                             empfi = emp;
                             break;
                         }
+                        EmpresaDAO.evict(emp);
                     }
                     ViagemResultanteMessage vresultante = new ViagemResultanteMessage(paragemInicial.getNome(), inicio.getHora(), paragemFinal.getNome(), fim.getHora(), vi.getPreco(), autofi.getNumero(), empfi.getNome(), vi.getNbilhetes(), vi.getID());
                     vrm.add(vresultante);
                 }
             }
+
+            ViagemDAO.evict(vi);
         }
+
+        ParagemDAO.evict(paragemInicial);
+        ParagemDAO.evict(paragemFinal);
+
         ArrayList<ViagemResultanteMessage> viagens = vrm.getViagens();
         Collections.sort(viagens, new RapidezComparator());
         vrm.setViagens(viagens);
@@ -78,7 +87,7 @@ public class ViagemBean {
     }
 
     public ViagensResultantesMessage filterViagens(filterViagemMessage fvm) throws PersistentException, ParseException {
-        ViagemPretendidaMessage vpm = new ViagemPretendidaMessage(fvm.getParagemInicial(), fvm.getParagemFinal(),fvm.getHora() ,fvm.getIntercidades());
+        ViagemPretendidaMessage vpm = new ViagemPretendidaMessage(fvm.getParagemInicial(), fvm.getParagemFinal(),fvm.getHora() , fvm.getIntercidades());
         ViagensResultantesMessage vrm = getViagens(vpm);
         ArrayList<ViagemResultanteMessage> viagens = vrm.getViagens();
         String filtro = fvm.getFiltro();

@@ -20,6 +20,7 @@ public class PerguntasFreqBean {
         for (PerguntaFrequente p : ps) {
             PerguntaFreqMessage pm = new PerguntaFreqMessage(p.getID(),p.getPergunta(),p.getResposta());
             temp.add(pm);
+            PerguntaFrequenteDAO.evict(p);
         }
         return new PerguntasFreqMessage(temp);
     }

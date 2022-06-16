@@ -4,20 +4,17 @@
     <facet type="hibernate" name="Hibernate">
       <configuration>
         <datasource-map>
-          <unit-entry name="ormmapping:BusPrime.cfg.xml" />
+          <unit-entry name="ormmapping:BusPrime.cfg.xml" value="5ecdc24d-d07f-418a-b442-b20f9ce897ee" />
         </datasource-map>
         <naming-strategy-map />
-        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/src/main/resources/ormmapping/BusPrime.cfg.xml" />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/Backend/src/main/resources/ormmapping/BusPrime.cfg.xml" />
       </configuration>
-    </facet>
-    <facet type="Spring" name="Spring">
-      <configuration />
     </facet>
     <facet type="ejb" name="EJB">
       <configuration>
         <ejbRoots>
-          <root url="file://$MODULE_DIR$/src/main/java" />
-          <root url="file://$MODULE_DIR$/src/main/resources" />
+          <root url="file://$MODULE_DIR$/Backend/src/main/java" />
+          <root url="file://$MODULE_DIR$/Backend/src/main/resources" />
         </ejbRoots>
       </configuration>
     </facet>

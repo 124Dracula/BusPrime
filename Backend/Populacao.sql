@@ -40,7 +40,7 @@ insert into busprime.paragemhora values(6,3,1,"06:45");
 insert into busprime.paragemhora values(7,3,4,"07:10");
 insert into busprime.paragemhora values(8,3,6,"07:30");
 
---PerguntaFrequente
+-- PerguntaFrequente
 
 insert into busprime.perguntafrequente values(1,"pergunta1","resposta1");
 insert into busprime.perguntafrequente values(2,"pergunta2","resposta2");

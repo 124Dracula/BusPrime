@@ -1,0 +1,26 @@
+{
+  "name": "frontend",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/vue-fontawesome": "^3.0.0-5",
+    "axios": "^0.27.2",
+    "font-awesome": "^4.7.0",
+    "fontawesome-4.7": "^4.7.0",
+    "jquery": "^3.6.0",
+    "vue": "^3.2.36",
+    "vue-axios": "^3.4.1",
+    "vue-router": "^4.0.13",
+    "w3-css": "^4.1.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.3.3",
+    "vite": "^2.9.9"
+  }
+}

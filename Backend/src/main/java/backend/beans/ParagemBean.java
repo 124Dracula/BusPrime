@@ -21,7 +21,9 @@ public class ParagemBean {
         for (Paragem p : ps) {
             ParagemMessage pm = new ParagemMessage(p.getNome(),p.getID());
             temp.add(pm);
+            ParagemDAO.evict(p);
         }
+
         return new ParagensMessage(temp);
     }
 }

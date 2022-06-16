@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c2de8a6b-f89c-409e-842d-c7e20e0e07ca" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BusPrime.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/BusPrime_ejb_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/BusPrime_ejb_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Spring_5_2_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BusPrime.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Populacao.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Populacao.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backend/beans/ParagemBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/beans/ParagemBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backend/beans/PerguntasFreqBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/beans/PerguntasFreqBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backend/beans/UtilizadorBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/beans/UtilizadorBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backend/beans/ViagemBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/beans/ViagemBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backend/controller/ControllerUtilizador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/controller/ControllerUtilizador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backend/controller/ControllerViagem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/controller/ControllerViagem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backend/message/ListaParagensFavMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/message/ListaParagensFavMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backend/message/ListaPercursoFavMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/message/ListaPercursoFavMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backend/message/ViagemPretendidaMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/message/ViagemPretendidaMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/backend/message/filterViagemMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/backend/message/filterViagemMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/beans/ParagemBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/beans/ParagemBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/beans/PerguntasFreqBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/beans/PerguntasFreqBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/beans/UtilizadorBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/beans/UtilizadorBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/beans/ViagemBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/beans/ViagemBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/controller/ControllerUtilizador.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/controller/ControllerUtilizador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/controller/ControllerViagem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/controller/ControllerViagem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/message/ListaParagensFavMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/message/ListaParagensFavMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/message/ListaPercursoFavMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/message/ListaPercursoFavMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/message/ViagemPretendidaMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/message/ViagemPretendidaMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/message/filterViagemMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/message/filterViagemMessage.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2AaaFbLYEts1ovKM1xDnyImbXdY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Universidade/4ano/2Semestre/AA/BusPrime/Backend/src/main/resources/ormmapping/BusPrime.cfg.xml&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Facets&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.22873563&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;5076ae0c549f69e948f8ca762fb48ca0&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="Servidor" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" />
+      <option name="ALTERNATIVE_JRE_PATH" value="18" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <module name="BusPrime" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="backend.Servidor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="backend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.Servidor" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c2de8a6b-f89c-409e-842d-c7e20e0e07ca" name="Changes" comment="" />
+      <created>1655250051158</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1655250051158</updated>
+      <workItem from="1655250058264" duration="1141000" />
+      <workItem from="1655251230437" duration="33103000" />
+      <workItem from="1655363190820" duration="18896000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
