@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Licensee: ruial(Universidade do Minho)
+License Type: Academic
+-->
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="backend.BD.Utilizador" table="Utilizador" lazy="false">
+		<id name="ID" column="ID" type="integer" unsaved-value="0">
+			<generator class="native">
+			</generator>
+		</id>
+		<property name="admin" column="Admin" type="boolean" length="1" not-null="true" lazy="false"/>
+		<property name="username" column="Username" type="string" length="255" not-null="false" lazy="false"/>
+		<property name="password" column="Password" type="string" length="255" not-null="false" lazy="false"/>
+		<property name="email" column="Email" type="string" length="255" not-null="false" lazy="false"/>
+		<property name="saldo" column="Saldo" type="double" not-null="true" lazy="false"/>
+		<set name="ORM_Paragens" table="Utilizador_Paragem" lazy="true" cascade="save-update,lock">
+			<key column="UtilizadorID" not-null="true"/>
+			<many-to-many column="ParagemID" class="backend.BD.Paragem">
+			</many-to-many>
+		</set>
+		<set name="ORM_Percursos" table="Utilizador_Percurso" lazy="true" cascade="save-update,lock">
+			<key column="UtilizadorID" not-null="true"/>
+			<many-to-many column="PercursoID" class="backend.BD.Percurso">
+			</many-to-many>
+		</set>
+		<set name="ORM_Bilhetes" lazy="true" cascade="save-update,lock" inverse="false">
+			<key column="UtilizadorID" not-null="true"/>
+			<one-to-many class="backend.BD.Bilhete"/>
+		</set>
+	</class>
+</hibernate-mapping>
