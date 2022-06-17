@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2de8a6b-f89c-409e-842d-c7e20e0e07ca" name="Changes" comment="" />
+    <list default="true" id="c2de8a6b-f89c-409e-842d-c7e20e0e07ca" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,7 +43,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "D:/Universidade/4ano/2Semestre/AA/BusPrime/output/lib/orm.jar",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.22873563",
     "settings.editor.selected.configurable": "preferences.general",
@@ -80,7 +83,7 @@
       <updated>1655250051158</updated>
       <workItem from="1655250058264" duration="1141000" />
       <workItem from="1655251230437" duration="33103000" />
-      <workItem from="1655363190820" duration="21837000" />
+      <workItem from="1655363190820" duration="27759000" />
     </task>
     <servers />
   </component>
